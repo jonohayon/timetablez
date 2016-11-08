@@ -6,11 +6,12 @@
 //  Copyright © 2016 Jonathan Ohayon. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // Just some custom delegates
-protocol ScrollDelegate {
+@objc protocol ScrollDelegate {
   func scrollTo (page: Int)
+  @objc optional func getScrollView () -> UIScrollView
 }
 
 protocol ClassDelegate {

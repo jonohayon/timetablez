@@ -12,6 +12,9 @@
 		7F031A3A1DCE322D0057A222 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F031A391DCE322D0057A222 /* Extensions.swift */; };
 		7F031A3C1DCE34050057A222 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F031A3B1DCE34050057A222 /* Delegates.swift */; };
 		7F03D3B91DCDDE0000A11A73 /* TimetableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F03D3B81DCDDE0000A11A73 /* TimetableVC.swift */; };
+		7F06CC041DD228C700D21946 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06CC031DD228C700D21946 /* RoundButton.swift */; };
+		7F06CC061DD22C8C00D21946 /* AddNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06CC051DD22C8C00D21946 /* AddNewVC.swift */; };
+		7F34C4591DD121F900C60F88 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F34C4581DD121F900C60F88 /* Enums.swift */; };
 		7F9312901DCD3B5A003FF27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F93128F1DCD3B5A003FF27D /* AppDelegate.swift */; };
 		7F9312941DCD3B5A003FF27D /* NextUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9312931DCD3B5A003FF27D /* NextUpVC.swift */; };
 		7F9312991DCD3B5A003FF27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9312971DCD3B5A003FF27D /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 		7F031A391DCE322D0057A222 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7F031A3B1DCE34050057A222 /* Delegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		7F03D3B81DCDDE0000A11A73 /* TimetableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableVC.swift; sourceTree = "<group>"; };
+		7F06CC031DD228C700D21946 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		7F06CC051DD22C8C00D21946 /* AddNewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewVC.swift; sourceTree = "<group>"; };
+		7F34C4581DD121F900C60F88 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		7F93128C1DCD3B5A003FF27D /* Timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F93128F1DCD3B5A003FF27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F9312931DCD3B5A003FF27D /* NextUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextUpVC.swift; sourceTree = "<group>"; };
@@ -74,8 +80,22 @@
 				7FAA64021DCE1ABB000AE51B /* RootVC.swift */,
 				7F03D3B81DCDDE0000A11A73 /* TimetableVC.swift */,
 				7F9312931DCD3B5A003FF27D /* NextUpVC.swift */,
+				7F06CC051DD22C8C00D21946 /* AddNewVC.swift */,
 			);
 			name = VCs;
+			sourceTree = "<group>";
+		};
+		7F34C45A1DD1220700C60F88 /* Custom Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				7F031A351DCE28830057A222 /* SchoolClass.swift */,
+				7F06CC031DD228C700D21946 /* RoundButton.swift */,
+				7F031A371DCE2A020057A222 /* ClassCell.swift */,
+				7F031A391DCE322D0057A222 /* Extensions.swift */,
+				7F031A3B1DCE34050057A222 /* Delegates.swift */,
+				7F34C4581DD121F900C60F88 /* Enums.swift */,
+			);
+			name = "Custom Stuff";
 			sourceTree = "<group>";
 		};
 		7F9312831DCD3B5A003FF27D = {
@@ -100,10 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7F93128F1DCD3B5A003FF27D /* AppDelegate.swift */,
-				7F031A351DCE28830057A222 /* SchoolClass.swift */,
-				7F031A371DCE2A020057A222 /* ClassCell.swift */,
-				7F031A391DCE322D0057A222 /* Extensions.swift */,
-				7F031A3B1DCE34050057A222 /* Delegates.swift */,
+				7F34C45A1DD1220700C60F88 /* Custom Stuff */,
 				7F031A3D1DD111F20057A222 /* VCs */,
 				7F9312971DCD3B5A003FF27D /* Main.storyboard */,
 				7F93129A1DCD3B5A003FF27D /* Assets.xcassets */,
@@ -233,7 +250,10 @@
 				7F03D3B91DCDDE0000A11A73 /* TimetableVC.swift in Sources */,
 				7F9312941DCD3B5A003FF27D /* NextUpVC.swift in Sources */,
 				7F031A361DCE28830057A222 /* SchoolClass.swift in Sources */,
+				7F06CC041DD228C700D21946 /* RoundButton.swift in Sources */,
+				7F06CC061DD22C8C00D21946 /* AddNewVC.swift in Sources */,
 				7F9312901DCD3B5A003FF27D /* AppDelegate.swift in Sources */,
+				7F34C4591DD121F900C60F88 /* Enums.swift in Sources */,
 				7F031A3A1DCE322D0057A222 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,18 @@
 import UIKit
 
 class TimetableVC: UITableViewController {
-  var classes: [SchoolClass] = [
-    SchoolClass(className: "Physics", startTime: "12:55", endTime: "13:40", room: 404, day: "Sunday"),
-    SchoolClass(className: "Literature", startTime: "13:50", endTime: "14:35", room: "Main class", day: "Monday")
-  ]
+  var classes: [SchoolClass] = SchoolClass.defaultClasses()
+  
   var delegate: ClassDelegate?
   var scrollDelegate: ScrollDelegate?
+
+  var sidebarOpen = false
+
+  @IBAction func menuButtonClicked(_ sender: Any) {
+    if let sdel = self.scrollDelegate {
+      sdel.getScrollView!().toggleSidebar(nil)
+    }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()

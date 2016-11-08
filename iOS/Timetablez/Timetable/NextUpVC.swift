@@ -11,6 +11,7 @@ import UIKit
 class NextUpVC: UIViewController, ClassDelegate {
   @IBOutlet weak var className: UILabel!
   @IBOutlet weak var classInfo: UILabel!
+  @IBOutlet weak var nextUpLabel: UILabel!
 
   var nextClass: SchoolClass? = nil
   var delegate: ScrollDelegate?
@@ -18,6 +19,12 @@ class NextUpVC: UIViewController, ClassDelegate {
   @IBAction func scrollDown(_ sender: Any) {
     if let del = self.delegate {
       del.scrollTo(page: 1)
+    }
+  }
+
+  @IBAction func openSidebar(_ sender: Any) {
+    if let del = self.delegate {
+      del.getScrollView!().toggleSidebar(nil)
     }
   }
 
@@ -40,6 +47,7 @@ class NextUpVC: UIViewController, ClassDelegate {
   }
 
   func changeClass (sclass: SchoolClass) {
+    self.nextUpLabel.alpha = 0
     self.className.text = sclass.className
     self.classInfo.text = "\(sclass.startTime) - \(sclass.endTime) | \(sclass.room)"
   }
